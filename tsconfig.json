@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@environments/*": ["./environments/*"],
+      "@shared/*": ["./modules/shared/*"]
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "target": "es2018",
+    "types": ["cypress", "cypress-xpath", "node", "cypress-plugin-api", "@cypress/grep"],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2020", "dom"]
+  },
+  "include": ["**/*.ts"]
+}
